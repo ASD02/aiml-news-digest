@@ -7,10 +7,10 @@ Usage:
     python run_digest.py
 
 Environment variables required:
-    ANTHROPIC_API_KEY   — your Anthropic API key
-    AGENT_ID            — agent_011CaQoxTVTeDgbvAv6ZwwWu
-    ENVIRONMENT_ID      — your aiml-news-digest-env environment ID
-    VAULT_ID            — vlt_011CaQpHKbxxhiQko3rdLkGY
+    ANTHROPIC_API_KEY  
+    AGENT_ID            
+    ENVIRONMENT_ID     
+    VAULT_ID            
 """
 
 import os
