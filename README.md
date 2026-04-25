@@ -4,11 +4,11 @@ A Claude Managed Agent that scrapes the web daily for AI/ML research papers and 
 
 ## Channels
 
-| Channel | ID | Content |
+| Channel | Content |
 |---|---|---|
-| `#ai-news` | `C0AUU0QD8S3` | Model releases, product announcements, AI policy |
-| `#ml-news` | `C0AV62C9G2H` | Research papers, arXiv, benchmarks, architectures |
-| `#misc` | `C0AV62BDE77` | Hardware, tooling, CS conference news |
+| `#ai-news` | Model releases, product announcements, AI policy |
+| `#ml-news` | Research papers, arXiv, benchmarks, architectures |
+| `#misc` | Hardware, tooling, CS conference news |
 
 ## How it works
 
