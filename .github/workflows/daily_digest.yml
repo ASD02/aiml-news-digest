@@ -1,0 +1,27 @@
+name: Daily AI/ML Digest
+
+on:
+  schedule:
+    - cron: '0 9 * * 1-5'  # 9am UTC, Monday–Friday
+  workflow_dispatch:         # also allows manual trigger from GitHub UI
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ENVIRONMENT_ID:    ${{ secrets.ENVIRONMENT_ID }}
+          AGENT_ID:          ${{ secrets.AGENT_ID }}
+          VAULT_ID:          ${{ secrets.VAULT_ID }}
+        run: python run_digest.py
